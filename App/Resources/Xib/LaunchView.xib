@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LaunchView" customModule="smartPF" customModuleProvider="target">
+            <connections>
+                <outlet property="descriptionLabel" destination="apw-J6-gHE" id="tcP-6h-QcT"/>
+                <outlet property="indicator" destination="al0-If-Auw" id="Gpt-AK-2uz"/>
+                <outlet property="logoView" destination="Day-ha-UIl" id="IcB-bB-s8u"/>
+                <outlet property="retryButton" destination="PgU-Lv-eOn" id="1e4-di-FNc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="GHP-ko-C2u">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Day-ha-UIl" customClass="LogoView" customModule="smartPF" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="361" width="393" height="70"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="y6g-SL-fXT"/>
+                    </constraints>
+                </view>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="al0-If-Auw">
+                    <rect key="frame" x="178" y="431" width="37" height="37"/>
+                    <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </activityIndicatorView>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Failed to Load" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="apw-J6-gHE">
+                    <rect key="frame" x="8" y="431" width="377" height="18"/>
+                    <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PgU-Lv-eOn">
+                    <rect key="frame" x="46.666666666666657" y="465" width="300" height="50"/>
+                    <color key="backgroundColor" name="BrighterBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="d3b-Mi-qgD"/>
+                        <constraint firstAttribute="width" constant="300" id="mXt-eI-1ga"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Reload">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="XeH-gp-6oh"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="al0-If-Auw" firstAttribute="centerX" secondItem="GHP-ko-C2u" secondAttribute="centerX" id="3NC-1U-S52"/>
+                <constraint firstItem="apw-J6-gHE" firstAttribute="leading" secondItem="XeH-gp-6oh" secondAttribute="leading" constant="8" id="6vq-U2-nLP"/>
+                <constraint firstItem="apw-J6-gHE" firstAttribute="top" secondItem="Day-ha-UIl" secondAttribute="bottom" id="Mx1-Vz-ZWs"/>
+                <constraint firstItem="Day-ha-UIl" firstAttribute="leading" secondItem="XeH-gp-6oh" secondAttribute="leading" id="Oy2-CL-wIt"/>
+                <constraint firstItem="Day-ha-UIl" firstAttribute="centerY" secondItem="GHP-ko-C2u" secondAttribute="centerY" constant="-30" id="TJY-eE-Grg"/>
+                <constraint firstItem="XeH-gp-6oh" firstAttribute="trailing" secondItem="apw-J6-gHE" secondAttribute="trailing" constant="8" id="Tse-T2-QI4"/>
+                <constraint firstItem="PgU-Lv-eOn" firstAttribute="top" secondItem="apw-J6-gHE" secondAttribute="bottom" constant="16" id="Y03-Ug-d4T"/>
+                <constraint firstItem="XeH-gp-6oh" firstAttribute="trailing" secondItem="Day-ha-UIl" secondAttribute="trailing" id="gNl-qO-MNU"/>
+                <constraint firstItem="apw-J6-gHE" firstAttribute="centerX" secondItem="GHP-ko-C2u" secondAttribute="centerX" id="kC1-Pz-QuQ"/>
+                <constraint firstItem="PgU-Lv-eOn" firstAttribute="centerX" secondItem="GHP-ko-C2u" secondAttribute="centerX" id="pdL-fr-vDq"/>
+                <constraint firstItem="Day-ha-UIl" firstAttribute="centerX" secondItem="GHP-ko-C2u" secondAttribute="centerX" id="u9u-CN-AE4"/>
+                <constraint firstItem="al0-If-Auw" firstAttribute="top" secondItem="Day-ha-UIl" secondAttribute="bottom" id="wp7-PB-qL9"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-253" y="-626"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="BrighterBackgroundColor">
+            <color red="0.39215686274509803" green="0.39215686274509803" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
