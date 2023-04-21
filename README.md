@@ -10,6 +10,12 @@ iCloud同期が有効な場合、同一AppleIDでログインされたデバイ�
 
 Data provided by [Financial Modeling Prep](https://financialmodelingprep.com/developer/docs/)
 
+<a href="https://apps.apple.com/us/app/smartpf/id1635493374?itsct=apps_box_badge&amp;itscg=30200">
+  <img src="https://user-images.githubusercontent.com/114917347/201505856-01f766e0-aedd-409d-89d6-29cef70a32ae.svg" 
+       alt="Download on the App Store"
+       style="height: 50px;">
+</a>
+
 ## Screenshot
 <img src="https://user-images.githubusercontent.com/114917347/232789578-e25b9616-6bd5-4eb9-8883-c94f0fa34f11.png" width="750">
 
