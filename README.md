@@ -17,7 +17,8 @@ Data provided by [Financial Modeling Prep](https://financialmodelingprep.com/dev
 </a>
 
 ## Screenshot
-<img src="https://user-images.githubusercontent.com/114917347/232789578-e25b9616-6bd5-4eb9-8883-c94f0fa34f11.png" width="750">
+|<img src="https://user-images.githubusercontent.com/114917347/233761121-d426c397-2754-4bc3-a0de-469920b48282.png" width="250">|<img src="https://user-images.githubusercontent.com/114917347/233761125-68388f04-091d-4e8d-a9e9-867c2584029e.png" width="250">|<img src="https://user-images.githubusercontent.com/114917347/233761130-17c9e6e3-4e8c-4a25-ab66-bc109bebfa89.png" width="250">|
+|:-:|:-:|:-:|
 
 ## Stack
 Swift5.7+, iOS15+, UIKit, Swift Concurrency, XCTest, R.swift, SwiftFormat, [SemiCircleChart](https://github.com/skw398/SemiCircleChart)
