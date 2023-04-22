@@ -6,11 +6,7 @@ final class InputAmountViewController: UIViewController {
     @IBOutlet private var companyNameLabel: UILabel!
     @IBOutlet private var currentPriceLabel: UILabel!
     @IBOutlet private var marketValueLabel: UILabel!
-    @IBOutlet var logoView: UIImageView! {
-        didSet {
-            logoView.layer.cornerRadius = 8
-        }
-    }
+    @IBOutlet var logoView: UIImageView!
 
     @IBOutlet private var amountTextField: UITextField! {
         didSet {
