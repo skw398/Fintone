@@ -151,17 +151,23 @@ extension APIService: APIServiceProtocol {
     func downloadLogoData(from profiles: [Profile]) async throws -> [String: Data?] {
         try await withThrowingTaskGroup(of: (String, Data?).self) { group in
             profiles
-                .filter { $0.image != nil }
-                .forEach { profile in
+                .compactMap { profile -> (String, URL)? in
+                    guard let url = profile.image else { return nil }
+                    return (profile.symbol, url)
+                }
+                .forEach { symbol, url in
                     group.addTask {
-                        try (
-                            profile.symbol,
-                            await self.downloadData(from: profile.image!)
-                        )
+                        do {
+                            return (symbol, try await self.downloadData(from: url))
+                        } catch {
+                            return (symbol, nil)
+                        }
                     }
                 }
             var logos: [String: Data] = [:]
-            for try await (symbol, data) in group { logos[symbol] = data }
+            for try await (symbol, data) in group {
+                logos[symbol] = data
+            }
             return logos
         }
     }
