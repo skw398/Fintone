@@ -1,12 +1,7 @@
 import UIKit
 
 final class StockTableViewCell: UITableViewCell {
-    @IBOutlet private var logoView: UIImageView! {
-        didSet {
-            logoView.layer.cornerRadius = 8
-        }
-    }
-
+    @IBOutlet private var logoView: UIImageView!
     @IBOutlet private var symbolLabel: UILabel!
     @IBOutlet private var companyNameLabel: UILabel!
     @IBOutlet private var currentPriceLabel: UILabel!
