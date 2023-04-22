@@ -15,7 +15,7 @@ import class UIKit.UIImage
             "SBUX": "スターバックス",
             "COST": "コストコ",
             "PYPL": "ペイパル",
-            "NIKE": "ナイキ",
+            "NKE": "ナイキ",
             "NVDA": "エヌヴィディア",
             "ADBE": "アドビ",
             "INTC": "インテル",
