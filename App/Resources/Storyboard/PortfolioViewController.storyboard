@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jwq-BV-ej4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jwq-BV-ej4">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -19,31 +19,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXE-QJ-z4j">
-                                <rect key="frame" x="0.0" y="0.0" width="372" height="628"/>
+                                <rect key="frame" x="0.0" y="0.0" width="372" height="594"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="odR-Vt-6aH">
-                                        <rect key="frame" x="0.0" y="0.0" width="372" height="576"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="372" height="595"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dGs-JV-4mc" customClass="HeaderView" customModule="Fintone" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="372" height="35"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="372" height="44"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="35" id="jRu-0x-Q2R"/>
+                                                    <constraint firstAttribute="height" constant="44" id="jRu-0x-Q2R"/>
                                                 </constraints>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pmP-py-Pp9" userLabel="Index Views Stack View">
-                                                <rect key="frame" x="0.0" y="43" width="372" height="70"/>
+                                                <rect key="frame" x="0.0" y="52" width="372" height="80"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fBu-EX-MN2" customClass="IndexView" customModule="Fintone" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="118.66666666666667" height="70"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="118.66666666666667" height="80"/>
                                                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pvf-c9-Fnr" customClass="IndexView" customModule="Fintone" customModuleProvider="target">
-                                                        <rect key="frame" x="126.66666666666666" y="0.0" width="118.66666666666666" height="70"/>
+                                                        <rect key="frame" x="126.66666666666666" y="0.0" width="118.66666666666666" height="80"/>
                                                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZYc-MJ-npN" customClass="IndexView" customModule="Fintone" customModuleProvider="target">
-                                                        <rect key="frame" x="253.33333333333334" y="0.0" width="118.66666666666666" height="70"/>
+                                                        <rect key="frame" x="253.33333333333334" y="0.0" width="118.66666666666666" height="80"/>
                                                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                                                     </view>
                                                 </subviews>
@@ -51,11 +51,11 @@
                                                 <constraints>
                                                     <constraint firstItem="pvf-c9-Fnr" firstAttribute="width" secondItem="fBu-EX-MN2" secondAttribute="width" id="Iaw-fa-kQ7"/>
                                                     <constraint firstItem="ZYc-MJ-npN" firstAttribute="width" secondItem="fBu-EX-MN2" secondAttribute="width" id="QEK-mF-EpW"/>
-                                                    <constraint firstAttribute="height" constant="70" id="qgT-35-ude"/>
+                                                    <constraint firstAttribute="height" constant="80" id="qgT-35-ude"/>
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="La9-GV-Mrx" userLabel="PieChart Stack View">
-                                                <rect key="frame" x="0.0" y="121" width="372" height="251"/>
+                                                <rect key="frame" x="0.0" y="140" width="372" height="251"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nui-pW-PUP" customClass="HighlightedStockView" customModule="Fintone" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="372" height="40"/>
@@ -82,21 +82,21 @@
                                                 <color key="backgroundColor" name="BackgroundColor"/>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4CN-rj-gi9" customClass="TotalView" customModule="Fintone" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="380" width="372" height="50"/>
+                                                <rect key="frame" x="0.0" y="399" width="372" height="50"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="mZw-7e-bRS"/>
                                                 </constraints>
                                             </view>
                                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PHr-hy-W4a" customClass="HelpView" customModule="Fintone" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="434" width="372" height="45"/>
+                                                <rect key="frame" x="0.0" y="453" width="372" height="45"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="0US-ah-ihI"/>
                                                 </constraints>
                                             </view>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="WGx-jI-WH8" customClass="UITableViewDetectableTouchEvents" customModule="Fintone" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="438" width="372" height="50"/>
+                                                <rect key="frame" x="0.0" y="457" width="372" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="SRn-9q-CDg"/>
                                                 </constraints>
@@ -114,7 +114,7 @@
                                                 <sections/>
                                             </tableView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NGm-vZ-67A" userLabel="App Logo View" customClass="LogoView" customModule="Fintone" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="496" width="372" height="80"/>
+                                                <rect key="frame" x="0.0" y="515" width="372" height="80"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="80" id="TgL-1M-vBt"/>
@@ -135,14 +135,14 @@
                                 <viewLayoutGuide key="frameLayoutGuide" id="1VU-qY-CJV"/>
                             </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y4S-7c-lvo">
-                                <rect key="frame" x="0.0" y="627" width="372" height="1"/>
+                                <rect key="frame" x="0.0" y="593" width="372" height="1"/>
                                 <color key="backgroundColor" name="BrighterBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="w4j-iL-yez"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mDR-cg-9hh" customClass="ToolView" customModule="Fintone" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="628" width="372" height="50"/>
+                                <rect key="frame" x="0.0" y="594" width="372" height="50"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bLG-TH-epO">
                                         <rect key="frame" x="0.0" y="0.0" width="372" height="1"/>
