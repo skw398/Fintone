@@ -142,7 +142,7 @@ import class UIKit.UIImage
             return mockIndexData
         }
 
-        func fetchExchangeRate() async throws -> Double {
+        func fetchExchangeRate(currency: Currency) async throws -> Double {
             try await fakeLatency()
             return mockExchangeRate
         }
