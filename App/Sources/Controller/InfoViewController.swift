@@ -11,6 +11,16 @@ final class InfoViewController: UIViewController {
 
     private let contents: [Content] = [
         .init(
+            title: "Language",
+            icon: .init(systemName: "globe"),
+            action: {
+                if let url: URL = .init(string: UIApplication.openSettingsURLString),
+                   UIApplication.shared.canOpenURL(url) {
+                    UIApplication.shared.open(url)
+                }
+            }
+        ),
+        .init(
             title: R.string.localizable.reportFeedbackOrIssues(),
             icon: .init(systemName: "ellipsis.message"),
             action: {
