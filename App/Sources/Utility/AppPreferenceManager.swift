@@ -3,6 +3,7 @@ import Foundation
 struct AppPreferenceManager {
     private enum Preference: String {
         case sortType
+        case currency
         case tutorialHasDone
         case helpViewIsHidden
     }
@@ -19,6 +20,19 @@ struct AppPreferenceManager {
         }
         set {
             userDefaults.set(newValue.rawValue, forKey: Preference.sortType.rawValue)
+        }
+    }
+    
+    static var currency: Currency {
+        get {
+            if let rawValue = userDefaults.string(forKey: Preference.currency.rawValue),
+               let currency = Currency(rawValue: rawValue) {
+                return currency
+            }
+            return .EUR_USD
+        }
+        set {
+            userDefaults.set(newValue.rawValue, forKey: Preference.currency.rawValue)
         }
     }
 
