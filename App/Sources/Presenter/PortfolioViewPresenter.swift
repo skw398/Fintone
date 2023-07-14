@@ -9,6 +9,7 @@ import Foundation
     func viewDidLoad()
     func didTapRetryButtonOnLaunchView()
     func didTapPortfolioNameButton()
+    func didTapSelectCurrencyButton()
     func didTapAddButtonOnNoStockView()
     func didTapWarningButtonOnStockCell()
     func didMoveRowOnSortView(moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath)
@@ -125,6 +126,10 @@ extension PortfolioViewPresenter: PortfolioViewPresenterInput {
                 }
             }
         )
+    }
+    
+    func didTapSelectCurrencyButton() {
+        Task { await fetchOnReload() }
     }
 
     func didTapAddButtonOnNoStockView() {

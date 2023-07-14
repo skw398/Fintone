@@ -20,7 +20,7 @@ struct FetchStocksAndFinancialDataUseCase: FetchStocksAndFinancialDataUseCasePro
         guard !portfolio.orderedSymbols.isEmpty else { return nil }
         async let asyncStocks = apiService.fetchStocks(for: portfolio)
         async let asyncIndices = apiService.fetchIndices()
-        async let asyncExchangeRate = apiService.fetchExchangeRate()
+        async let asyncExchangeRate = apiService.fetchExchangeRate(currency: AppPreferenceManager.currency)
         async let asyncLatestOpeningDate = apiService.fetchLatestOpeningDate()
         let (stocks, indices, exchangeRate, latestOpeningDate) = try await (
             asyncStocks, asyncIndices, asyncExchangeRate, asyncLatestOpeningDate

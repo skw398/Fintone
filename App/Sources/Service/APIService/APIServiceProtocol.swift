@@ -1,7 +1,7 @@
 import Foundation
 
 protocol APIServiceProtocol: Sendable {
-    func fetchExchangeRate() async throws -> Double
+    func fetchExchangeRate(currency: Currency) async throws -> Double
     func fetchLatestOpeningDate() async throws -> Date?
     func fetchProfiles(forSymbols symbols: [String]) async throws -> [Profile]
     func fetchQuotes(forSymbols symbols: [String]) async throws -> [Quote]

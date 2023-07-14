@@ -94,8 +94,8 @@ extension APIService: APIServiceProtocol {
         return formatter.date(from: historical[0].date)
     }
 
-    func fetchExchangeRate() async throws -> Double {
-        let quote = try await fetchQuotes(forSymbols: ["USDJPY"])
+    func fetchExchangeRate(currency: Currency) async throws -> Double {
+        let quote = try await fetchQuotes(forSymbols: [currency.symbol])
         return quote[0].price
     }
 

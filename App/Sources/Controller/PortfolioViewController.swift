@@ -75,6 +75,9 @@ final class PortfolioViewController: UIViewController {
             }
         ))
 
+        headerView.setActions(
+            didTapSelectCurrencyButtonAction: presenter.didTapSelectCurrencyButton
+        )
         semiCircleChart.setHighlightedIndexDidChangeHandler(
             highlightedIndexChangedOnPieChartView(index:)
         )

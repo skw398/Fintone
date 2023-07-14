@@ -32,6 +32,7 @@
 		B4067FEB29E9258000744B1E /* APIKeyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4067FEA29E9258000744B1E /* APIKeyProtocol.swift */; };
 		B4068D5629DD961F00016167 /* FetchStocksAndFinancialDataUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4068D5529DD961F00016167 /* FetchStocksAndFinancialDataUseCase.swift */; };
 		B4068D5C29DDA5E400016167 /* StockSearchUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4068D5B29DDA5E400016167 /* StockSearchUseCase.swift */; };
+		B4137DC72A61632500ECCF31 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4137DC62A61632500ECCF31 /* Currency.swift */; };
 		B439B20C29D98C5900605AA3 /* Period.swift in Sources */ = {isa = PBXBuildFile; fileRef = B439B20B29D98C5900605AA3 /* Period.swift */; };
 		B442931329EBC51C000C70E8 /* PortfolioViewDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B442931229EBC51C000C70E8 /* PortfolioViewDataModel.swift */; };
 		B442932E29EBC670000C70E8 /* FinancialData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B442932929EBC670000C70E8 /* FinancialData.swift */; };
@@ -132,6 +133,7 @@
 		B4067FEA29E9258000744B1E /* APIKeyProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeyProtocol.swift; sourceTree = "<group>"; };
 		B4068D5529DD961F00016167 /* FetchStocksAndFinancialDataUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchStocksAndFinancialDataUseCase.swift; sourceTree = "<group>"; };
 		B4068D5B29DDA5E400016167 /* StockSearchUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockSearchUseCase.swift; sourceTree = "<group>"; };
+		B4137DC62A61632500ECCF31 /* Currency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		B439B20B29D98C5900605AA3 /* Period.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Period.swift; sourceTree = "<group>"; };
 		B442931229EBC51C000C70E8 /* PortfolioViewDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioViewDataModel.swift; sourceTree = "<group>"; };
 		B442931A29EBC54B000C70E8 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -340,6 +342,7 @@
 				B442935129EBC79F000C70E8 /* Constants.swift */,
 				B45EEEAA28E31D7F002AC74C /* SortType.swift */,
 				B439B20B29D98C5900605AA3 /* Period.swift */,
+				B4137DC62A61632500ECCF31 /* Currency.swift */,
 				B462743629DC5026002B729F /* LanguageManager.swift */,
 				B462743F29DC7851002B729F /* AppPreferenceManager.swift */,
 			);
@@ -606,6 +609,7 @@
 				B464E16D29DB270C004E904B /* PortfolioNameInputAlertController.swift in Sources */,
 				B4D314A629E8350200078717 /* R.generated.swift in Sources */,
 				B45FFDAA28D5FC2F00BD37A8 /* PortfolioService.swift in Sources */,
+				B4137DC72A61632500ECCF31 /* Currency.swift in Sources */,
 				B4A3256729E057F60072A2A6 /* MockAPIService.swift in Sources */,
 				B45EEEAB28E31D7F002AC74C /* SortType.swift in Sources */,
 				B442931329EBC51C000C70E8 /* PortfolioViewDataModel.swift in Sources */,
