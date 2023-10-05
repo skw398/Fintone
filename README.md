@@ -34,15 +34,14 @@ Swift5.7+, iOS15+, UIKit, Swift Concurrency, XCTest, R.swift, SwiftFormat, [Semi
 
 ## To Run
 
-Open `App/Develop.xcodeproj` -> Select target `Develop` -> `⌘R` !!
+Open `App/Develop.xcodeproj` -> Select target `Develop` -> `Run`
 
-- Swift Package Managerを使っています。手動でのライブラリのダウンロードは必要ありません。
-- `R.swift`の生成ファイルは`App/Resouces`に含まれています。プラグインの設定は必要ありません。
-- `Develop.xcodeproj`は`APIKey`クラスを定義した`APIKey.swift`への参照がないため、モックを返すMockAPIServiceとインメモリのInMemoryPortfolioServiceがセットされます。
-- `APIKeyProtocol`に適合した`APIKey`クラスを本体のモジュール内に定義した場合、本番用のAPIServiceとPortfolioServiceがセットされます。なおFinancial Modeling PrepのStarerプラン以上のAPIキーが必要です。
+- ライブラリの管理はSwift Package Managerを利用。ライブラリのダウンロードは必要なし。
+- `R.swift`の生成ファイルは`App/Resouces`。プラグインの設定は必要なし。
+- `Develop.xcodeproj`は`APIKey`クラスを定義した`APIKey.swift`への参照がないため、モックを返すMockAPIServiceとインメモリのInMemoryPortfolioServiceが自動的にセット。Financial Modeling PrepのStarerプラン以上のAPIキーを取得し、`APIKeyProtocol`に適合した`APIKey`クラスを本体のモジュール内に定義した場合、本番用のAPIServiceとPortfolioServiceが自動的にセット。([App/Sources/Service/ServiceDependencies.swift](https://github.com/skw398/Fintone/blob/main/App/Sources/Service/ServiceDependencies.swift)) 
 
 <details>
-  <summary>使えるモックSymbols</summary>
+  <summary>スタブで利用可能なティッカーシンボル</summary>
   
 ```swift
     static let availableSymbols = [
