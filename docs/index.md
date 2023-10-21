@@ -10,9 +10,9 @@ iCloud同期が有効な場合、同一AppleIDでログインされたデバイ�
 
 Data provided by [Financial Modeling Prep](https://financialmodelingprep.com/developer/docs/)
 
-## Terms of Use & Privacy Policy / 利用規約・プライバシーポリシー
+## Terms of Use & Privacy Policy & Licenses / 利用規約・プライバシーポリシー・ライセンス
 
-[Terms of Use & Privacy Policy](terms_and_privacy_policy.md)
+[Terms of Use & Privacy Policy & Licenses](terms_and_privacy_policy.md)
 
 ## Contact Us / お問い合わせ
 
