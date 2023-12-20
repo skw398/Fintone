@@ -117,8 +117,32 @@ import class UIKit.UIImage
                 )
             )
         }
-
-        private let mockExchangeRate = Double.random(in: 80.0 ... 200.0)
+        
+        private let mockExchangeRates: [Currency: Double] = {
+            var rates: [Currency: Double] = [:]
+            
+            Currency.allCases.forEach { currency in
+                let rate: Double
+                switch currency {
+                case .EUR_USD:
+                    rate = Double.random(in: 0.8 ... 1.5)
+                case .USD_JPY:
+                    rate = Double.random(in: 80.0 ... 200.0)
+                case .GBP_USD:
+                    rate = Double.random(in: 1.0 ... 2.0)
+                case .AUD_USD:
+                    rate = Double.random(in: 0.5 ... 1.0)
+                case .USD_CAD:
+                    rate = Double.random(in: 1.0 ... 1.5)
+                case .USD_CHF:
+                    rate = Double.random(in: 0.5 ... 1.5)
+                }
+                
+                rates[currency] = rate
+            }
+            
+            return rates
+        }()
 
         private func fakeLatency() async throws {
             try await Task.sleep(nanoseconds: UInt64(0.5 * 1_000_000_000))
@@ -144,7 +168,7 @@ import class UIKit.UIImage
 
         func fetchExchangeRate(currency: Currency) async throws -> Double {
             try await fakeLatency()
-            return mockExchangeRate
+            return mockExchangeRates[currency]!
         }
 
         func fetchLatestOpeningDate() async throws -> Date? {
